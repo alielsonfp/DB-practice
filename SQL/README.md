@@ -256,7 +256,7 @@ Neste processo de normalização até 2FN:
 - Subdividimos os dados da coluna `endereco` nas novas colunas.
 - Removemos a coluna `endereco` original para eliminar redundâncias e melhorar a estrutura do banco de dados.
 
-#Conclusão
+# Conclusão
 
 Este repositório foi criado com o intuito de apresentar e revisar conceitos básicos de criação e gerenciamento de bancos de dados SQL. Cobrimos desde a criação de tabelas e inserção de dados até a aplicação prática da normalização em um cenário de viagens.
 
