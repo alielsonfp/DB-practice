@@ -95,3 +95,24 @@ INSERT INTO viagens.reservas (id, id_usuario, id_destino, data, status) VALUES
 (3, 3, 3, '2023-09-20', 'cancelada');
 ```
 
+### Atualizando e Excluindo Dados
+
+#### Atualizando um Usuário
+
+```sql
+UPDATE viagens.usuarios
+SET endereco = 'Rua D, 987, Cidade Z, Estado W'
+WHERE id = 1;
+```
+
+#### Excluindo um Usuário
+```sql
+DELETE FROM viagens.usuarios
+WHERE id = 1;
+```
+
+#### Inserindo Usuário Novamente
+```sql
+INSERT INTO viagens.usuarios (id, nome, email, data_nascimento, endereco) VALUES 
+(1, 'João Silva', 'joao@example.com', '1990-05-15', 'Rua A, 123, Cidade X, Estado Y');
+```
