@@ -1,4 +1,4 @@
-# Conceitos Básicos de Banco de Dados SQL
+# Conceitos Básicos de Banco de Dados Relacionais (SQL)
 
 Bem-vindo ao repositório sobre conceitos básicos de banco de dados SQL! Este repositório contém exemplos práticos e explicações sobre a criação e manipulação de bancos de dados. Aqui, vamos explorar comandos SQL fundamentais através da criação de um banco de dados chamado `viagens` com tabelas relacionadas.
 
