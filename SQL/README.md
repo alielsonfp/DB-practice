@@ -126,4 +126,19 @@ ALTER TABLE usuarios MODIFY COLUMN endereco VARCHAR(150);
 
 Este comando irá modificar a definição da coluna `endereco` na tabela `usuarios`, alterando o tipo de dados para `VARCHAR(150)`, permitindo assim que o campo possa conter até 150 caracteres. Isso é útil quando você precisa aumentar o espaço disponível para armazenar dados em uma coluna que pode ter sido definida inicialmente com um tamanho insuficiente.
 
+### Chaves Primárias e Estrangeiras em Bancos de Dados Relacionais
+
+**Chave Primária (Primary Key):**
+- A chave primária é um campo (ou um conjunto de campos) que identifica de forma única cada registro em uma tabela.
+- Ela garante a integridade dos dados, evitando registros duplicados.
+- Além disso, é comumente usada como referência por outras tabelas (através de chaves estrangeiras) para estabelecer relacionamentos entre elas.
+
+**Chave Estrangeira (Foreign Key):**
+- A chave estrangeira é um campo (ou um conjunto de campos) em uma tabela que estabelece uma relação com a chave primária de outra tabela.
+- Ela é usada para garantir a integridade referencial, garantindo que os valores em uma tabela filha correspondam aos valores existentes na tabela pai.
+- As chaves estrangeiras são utilizadas para estabelecer relações entre tabelas, permitindo consultas que envolvem dados de múltiplas tabelas e garantindo a consistência dos dados.
+
+Essas chaves são cruciais para garantir a integridade e a consistência dos dados em um banco de dados relacional.
+
+
 
