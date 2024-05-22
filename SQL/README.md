@@ -22,3 +22,47 @@ CREATE TABLE usuarios (
     endereco VARCHAR(50) NOT NULL COMMENT 'Endereço do usuário',
     data_nascimento DATE NOT NULL COMMENT 'Data de nascimento do usuário'
 );
+
+**Explicação:**
+
+- `id INT`: Identificador único para cada usuário.
+- `nome VARCHAR(255) NOT NULL`: Nome do usuário, obrigatório.
+- `email VARCHAR(100) NOT NULL UNIQUE`: Email do usuário, obrigatório e único.
+- `endereco VARCHAR(50) NOT NULL`: Endereço do usuário, obrigatório.
+- `data_nascimento DATE NOT NULL`: Data de nascimento do usuário, obrigatória.
+
+### Criação da Tabela `destinos`
+
+A tabela `destinos` armazena informações sobre os destinos de viagem.
+
+```sql
+CREATE TABLE viagens.destinos (
+    id INT,
+    nome VARCHAR(255) NOT NULL COMMENT 'Nome do Destino',
+    descricao VARCHAR(255) NOT NULL COMMENT 'Descrição do Destino'
+);
+
+**Explicação:**
+
+- id INT: Identificador único para cada destino.
+- nome VARCHAR(255) NOT NULL: Nome do destino, obrigatório.
+- descricao VARCHAR(255) NOT NULL: Descrição do destino, obrigatória.
+
+### Criação da Tabela reservas
+
+```sql
+CREATE TABLE viagens.reservas (
+   id INT COMMENT 'Identificador único da reserva',
+   id_usuario INT COMMENT 'Referência ao ID do usuário que fez a reserva',
+   id_destino INT COMMENT 'Referência ao ID do destino da reserva',
+   data DATE COMMENT 'Data da reserva',
+   status VARCHAR(255) DEFAULT 'pendente' COMMENT 'Status da reserva (confirmada, pendente, cancelada, etc)'
+);
+
+**Explicação:**
+
+id INT: Identificador único da reserva.
+id_usuario INT: Referência ao ID do usuário que fez a reserva.
+id_destino INT: Referência ao ID do destino da reserva.
+data DATE: Data da reserva.
+status VARCHAR(255) DEFAULT 'pendente': Status da reserva, com valor padrão 'pendente'.
