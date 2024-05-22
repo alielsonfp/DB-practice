@@ -133,7 +133,7 @@ Este comando irá modificar a definição da coluna `endereco` na tabela `usuari
 - Ela garante a integridade dos dados, evitando registros duplicados.
 - Além disso, é comumente usada como referência por outras tabelas (através de chaves estrangeiras) para estabelecer relacionamentos entre elas.
   
-  ### Adicionando Chaves Primárias
+### Adicionando Chaves Primárias
 
 Este trecho de código SQL adiciona chaves primárias às tabelas `usuarios`, `destinos` e `reservas`. Uma chave primária é essencial em uma tabela, pois garante que cada linha tenha uma identificação única.
 
