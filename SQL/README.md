@@ -191,4 +191,33 @@ ON DELETE CASCADE;
 
 Isso garante a integridade referencial dos dados, removendo automaticamente as reservas associadas quando um usuário é excluído.
 
+### Normalização de Dados
+
+A normalização de dados é um processo usado em bancos de dados relacionais para organizar os dados de forma eficiente. O objetivo principal é eliminar a redundância de dados e garantir a integridade dos mesmos. A normalização é dividida em várias formas normais (NF), cada uma com um nível crescente de organização. Vamos discutir as três primeiras formas normais (3FN).
+
+#### Primeira Forma Normal (1FN)
+
+- **Definição:** Uma tabela está em 1FN se todos os campos contêm apenas valores atômicos (não divisíveis) e cada campo contém apenas um valor.
+- **Importância:** Elimina grupos repetitivos, assegurando que cada campo contenha apenas um valor único.
+
+#### Segunda Forma Normal (2FN)
+
+- **Definição:** Uma tabela está em 2FN se estiver em 1FN e todos os campos não-chave dependem completamente da chave primária.
+- **Importância:** Remove dependências parciais de uma chave primária composta, melhorando a integridade dos dados.
+
+#### Terceira Forma Normal (3FN)
+
+- **Definição:** Uma tabela está em 3FN se estiver em 2FN e todos os campos não-chave são mutuamente independentes, ou seja, não há dependências transitivas.
+- **Importância:** Elimina dependências transitivas, garantindo que cada campo não-chave dependa apenas da chave primária.
+
+### Importância da Normalização
+
+- **Redução da Redundância:** A normalização minimiza a duplicação de dados, economizando espaço de armazenamento e evitando inconsistências.
+- **Melhora da Integridade dos Dados:** Garantir que cada peça de informação seja armazenada apenas uma vez melhora a precisão e a consistência dos dados.
+- **Facilidade de Manutenção:** Com dados organizados de maneira lógica e sem redundâncias, as operações de inserção, atualização e exclusão se tornam mais eficientes e menos propensas a erros.
+- **Melhora do Desempenho:** Embora a normalização possa introduzir a necessidade de joins complexos, ela melhora o desempenho geral do sistema em termos de integridade e gerenciamento de dados.
+
+A normalização é essencial para o design eficiente e eficaz de bancos de dados, garantindo que os dados sejam armazenados de forma organizada e consistente.
+
+
 
