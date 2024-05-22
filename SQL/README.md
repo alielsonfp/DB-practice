@@ -116,3 +116,14 @@ WHERE id = 1;
 INSERT INTO viagens.usuarios (id, nome, email, data_nascimento, endereco) VALUES 
 (1, 'João Silva', 'joao@example.com', '1990-05-15', 'Rua A, 123, Cidade X, Estado Y');
 ```
+### Alterando o Tamanho de uma Coluna na Tabela
+
+Se você deseja fazer uma alteração na tabela `usuarios` para aumentar o tamanho da coluna `endereco`, que foi definida inicialmente com um tamanho menor, você pode usar o seguinte código SQL:
+
+```sql
+ALTER TABLE usuarios MODIFY COLUMN endereco VARCHAR(150);
+```
+
+Este comando irá modificar a definição da coluna `endereco` na tabela `usuarios`, alterando o tipo de dados para `VARCHAR(150)`, permitindo assim que o campo possa conter até 150 caracteres. Isso é útil quando você precisa aumentar o espaço disponível para armazenar dados em uma coluna que pode ter sido definida inicialmente com um tamanho insuficiente.
+
+
