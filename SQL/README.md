@@ -22,6 +22,7 @@ CREATE TABLE usuarios (
     endereco VARCHAR(50) NOT NULL COMMENT 'Endereço do usuário',
     data_nascimento DATE NOT NULL COMMENT 'Data de nascimento do usuário'
 );
+```
 
 **Explicação:**
 
@@ -41,7 +42,7 @@ CREATE TABLE viagens.destinos (
     nome VARCHAR(255) NOT NULL COMMENT 'Nome do Destino',
     descricao VARCHAR(255) NOT NULL COMMENT 'Descrição do Destino'
 );
-
+```
 **Explicação:**
 
 - id INT: Identificador único para cada destino.
@@ -58,6 +59,7 @@ CREATE TABLE viagens.reservas (
    data DATE COMMENT 'Data da reserva',
    status VARCHAR(255) DEFAULT 'pendente' COMMENT 'Status da reserva (confirmada, pendente, cancelada, etc)'
 );
+```
 
 **Explicação:**
 
