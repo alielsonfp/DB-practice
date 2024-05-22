@@ -2,6 +2,10 @@
 
 Bem-vindo ao repositório sobre conceitos básicos de banco de dados SQL! Este repositório contém exemplos práticos e explicações sobre a criação e manipulação de bancos de dados. Aqui, vamos explorar comandos SQL fundamentais através da criação de um banco de dados chamado `viagens` com tabelas relacionadas.
 
+### Diagrama do Banco de Dados
+
+![Diagrama do Banco de Dados](https://raw.githubusercontent.com/alielsonfp/DB-practice/main/SQL/assets/Diagrama.png)
+
 ## Introdução
 
 Este repositório serve como um guia introdutório para quem está começando a trabalhar com bancos de dados SQL. Vamos focar em comandos SQL para criar e manipular tabelas.
