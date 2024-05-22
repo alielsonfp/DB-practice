@@ -161,9 +161,6 @@ ADD PRIMARY KEY (id);
 
 ### Adicionando Chaves Estrangeiras
 
-Essas chaves são cruciais para garantir a integridade e a consistência dos dados em um banco de dados relacional.
-### Adicionando Chaves Estrangeiras
-
 Este trecho de código SQL adiciona chaves estrangeiras às tabelas `reservas` referenciando as tabelas `usuarios` e `destinos`. Chaves estrangeiras são usadas para estabelecer relações entre tabelas, garantindo a integridade referencial dos dados.
 
 ```sql
@@ -191,5 +188,7 @@ ADD CONSTRAINT fk_reservas_usuarios
 FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 ON DELETE CASCADE;
 ```
+
+Isso garante a integridade referencial dos dados, removendo automaticamente as reservas associadas quando um usuário é excluído.
 
 
