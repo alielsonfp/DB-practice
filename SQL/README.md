@@ -132,6 +132,27 @@ Este comando irá modificar a definição da coluna `endereco` na tabela `usuari
 - A chave primária é um campo (ou um conjunto de campos) que identifica de forma única cada registro em uma tabela.
 - Ela garante a integridade dos dados, evitando registros duplicados.
 - Além disso, é comumente usada como referência por outras tabelas (através de chaves estrangeiras) para estabelecer relacionamentos entre elas.
+- 
+  ### Adicionando Chaves Primárias
+
+Este trecho de código SQL adiciona chaves primárias às tabelas `usuarios`, `destinos` e `reservas`. Uma chave primária é essencial em uma tabela, pois garante que cada linha tenha uma identificação única.
+
+```sql
+-- Tabela "usuarios"
+ALTER TABLE usuarios
+MODIFY COLUMN id INT AUTO_INCREMENT,
+ADD PRIMARY KEY (id);
+
+-- Tabela "destinos"
+ALTER TABLE destinos
+MODIFY COLUMN id INT AUTO_INCREMENT,
+ADD PRIMARY KEY (id);
+
+-- Tabela "reservas"
+ALTER TABLE reservas
+MODIFY COLUMN id INT AUTO_INCREMENT,
+ADD PRIMARY KEY (id);
+```
 
 **Chave Estrangeira (Foreign Key):**
 - A chave estrangeira é um campo (ou um conjunto de campos) em uma tabela que estabelece uma relação com a chave primária de outra tabela.
