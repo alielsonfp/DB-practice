@@ -256,6 +256,22 @@ Neste processo de normalização até 2FN:
 - Subdividimos os dados da coluna `endereco` nas novas colunas.
 - Removemos a coluna `endereco` original para eliminar redundâncias e melhorar a estrutura do banco de dados.
 
+#Conclusão
+
+Este repositório foi criado com o intuito de apresentar e revisar conceitos básicos de criação e gerenciamento de bancos de dados SQL. Cobrimos desde a criação de tabelas e inserção de dados até a aplicação prática da normalização em um cenário de viagens.
+
+Embora tenhamos abordado tópicos essenciais, como normalização de dados, ainda há diversos assuntos importantes que não foram explorados em detalhes, como índices, transações, stored procedures e triggers, backup e restauração, além de conceitos avançados de normalização e consultas complexas.
+
+Para quem deseja aprofundar seus conhecimentos, sugiro começar com índices e consultas com junções e subconsultas, fundamentais para o desenvolvimento e administração de bancos de dados. Em seguida, é interessante explorar transações, stored procedures e triggers, que agregam lógica e automação ao banco de dados. O backup e restauração são cruciais para garantir a segurança dos dados.
+
+Agradeço a todos que dedicaram seu tempo para explorar este repositório. Espero que tenha sido útil na consolidação dos conceitos básicos de SQL. Estou disponível para dúvidas ou sugestões adicionais. Obrigado!
 
 
+### Contato
+
+Para mais informações, você pode me encontrar em:
+
+- GitHub: [alielsonfp](https://github.com/alielsonfp)
+- Instagram: [delirium_psy](https://www.instagram.com/delirium_psy/)
+- LinkedIn: [Alielson Ferreira](https://www.linkedin.com/in/alielsonferreira/)
 
