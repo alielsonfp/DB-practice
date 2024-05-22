@@ -45,9 +45,9 @@ CREATE TABLE viagens.destinos (
 ```
 **Explicação:**
 
-- id INT: Identificador único para cada destino.
-- nome VARCHAR(255) NOT NULL: Nome do destino, obrigatório.
-- descricao VARCHAR(255) NOT NULL: Descrição do destino, obrigatória.
+- `id INT`: Identificador único para cada destino.
+- `nome VARCHAR(255) NOT NULL`: Nome do destino, obrigatório.
+- `descricao VARCHAR(255) NOT NULL`: Descrição do destino, obrigatória.
 
 ### Criação da Tabela reservas
 
@@ -63,8 +63,9 @@ CREATE TABLE viagens.reservas (
 
 **Explicação:**
 
-id INT: Identificador único da reserva.
-id_usuario INT: Referência ao ID do usuário que fez a reserva.
-id_destino INT: Referência ao ID do destino da reserva.
-data DATE: Data da reserva.
-status VARCHAR(255) DEFAULT 'pendente': Status da reserva, com valor padrão 'pendente'.
+- `id INT`: Identificador único da reserva.
+- `id_usuario INT`: Referência ao ID do usuário que fez a reserva.
+- `id_destino INT`: Referência ao ID do destino da reserva.
+- `data DATE`: Data da reserva.
+- `status VARCHAR(255) DEFAULT 'pendente'`: Status da reserva, com valor padrão 'pendente'.
+
