@@ -159,7 +159,21 @@ ADD PRIMARY KEY (id);
 - Ela é usada para garantir a integridade referencial, garantindo que os valores em uma tabela filha correspondam aos valores existentes na tabela pai.
 - As chaves estrangeiras são utilizadas para estabelecer relações entre tabelas, permitindo consultas que envolvem dados de múltiplas tabelas e garantindo a consistência dos dados.
 
-Essas chaves são cruciais para garantir a integridade e a consistência dos dados em um banco de dados relacional.
+### Adicionando Chaves Estrangeiras
+
+Este trecho de código SQL adiciona chaves estrangeiras às tabelas `reservas` referenciando as tabelas `usuarios` e `destinos`. Chaves estrangeiras são usadas para estabelecer relações entre tabelas, garantindo a integridade referencial dos dados.
+
+```sql
+-- Adicionando chave estrangeira na tabela "reservas" referenciando a tabela "usuarios"
+ALTER TABLE reservas
+ADD CONSTRAINT fk_reservas_usuarios
+FOREIGN KEY (id_usuario) REFERENCES usuarios(id);
+
+-- Adicionando chave estrangeira na tabela "reservas" referenciando a tabela "destinos"
+ALTER TABLE reservas
+ADD CONSTRAINT fk_reservas_destinos
+FOREIGN KEY (id_destino) REFERENCES destinos(id);
+```
 
 
 
