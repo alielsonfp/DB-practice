@@ -219,5 +219,39 @@ A normalização de dados é um processo usado em bancos de dados relacionais pa
 
 A normalização é essencial para o design eficiente e eficaz de bancos de dados, garantindo que os dados sejam armazenados de forma organizada e consistente.
 
+### Aplicando Normalização no Banco de Dados
+
+Para melhorar a organização dos dados e facilitar a manutenção, iremos realizar a normalização até a Segunda Forma Normal (2FN) na tabela `usuarios`. Vamos dividir a coluna `endereco` em várias colunas distintas. Isso permitirá um gerenciamento mais eficiente e evitará redundâncias.
+
+#### Código para Normalização
+
+```sql
+-- Adicionar colunas de endereço à tabela "Usuarios"
+ALTER TABLE Usuarios
+ADD rua VARCHAR(100),
+ADD numero VARCHAR(10),
+ADD cidade VARCHAR(50),
+ADD estado VARCHAR(50);
+
+-- Copia os dados da tabela original para a nova tabela
+UPDATE usuarios
+SET rua = SUBSTRING_INDEX(SUBSTRING_INDEX(endereco, ',', 1), ',', -1),
+    numero = SUBSTRING_INDEX(SUBSTRING_INDEX(endereco, ',', 2), ',', -1),
+    cidade = SUBSTRING_INDEX(SUBSTRING_INDEX(endereco, ',', 3), ',', -1),
+    estado = SUBSTRING_INDEX(endereco, ',', -1);
+
+-- Exclusão da coluna "endereco" da tabela original
+ALTER TABLE usuarios
+DROP COLUMN endereco;
+```
+
+### Explicação
+Neste processo de normalização até 2FN:
+
+- Adicionamos novas colunas (`rua`, `numero`, `cidade`, `estado`) à tabela `usuarios`.
+- Subdividimos os dados da coluna `endereco` nas novas colunas.
+- Removemos a coluna `endereco` original para eliminar redundâncias e melhorar a estrutura do banco de dados.
+
+
 
 
